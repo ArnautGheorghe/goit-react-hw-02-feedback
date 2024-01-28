@@ -1,16 +1,15 @@
+import Statistics from "./Statistics/Statistics";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <h2>Please leave feedback</h2>
+      <button>Good</button>
+      <button>Neutral</button>
+      <button>Bad</button>
+      <br />
+
+      <Statistics />
     </div>
   );
 };
