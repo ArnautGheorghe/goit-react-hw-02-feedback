@@ -1,28 +1,22 @@
-import styles from './Statistics.module.css';
+import styles from './Statistics.modules.css';
 
 import PropTypes from 'prop-types';
 
-const Statistics = ({ comp, title, stats }) => {
-    const state = {
-    
-  good: 3,
-  neutral: 2,
-  bad: 2,
-
-    }
-    
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
+  
 
   return (
     <div className={styles.black}>
       <h2>Statistics</h2>
       <ul>
-        <li>Good: {state.good}</li>
-        <li>Neutral:{state.neutral}</li>
-        <li>Bad:{state.bad}</li>
-        <li>Total:{state.good + state.neutral + state.bad}</li>
+        <li>Good: {good}</li>
+        <li>Neutral:{neutral}</li>
+        <li>Bad:{bad}</li>
+        <li>Total:{total}</li>
         <li>
           Positive feedback:
-          {((state.good * 100) / (state.good + state.neutral + state.bad)).toFixed()} %
+                  {positivePercentage}
+          %
         </li>
       </ul>
     </div>

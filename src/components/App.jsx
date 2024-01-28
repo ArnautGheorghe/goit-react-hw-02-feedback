@@ -1,15 +1,13 @@
-import Statistics from "./Statistics/Statistics";
+import Notifications from "./Notifications/Notifications.jsx";
+import Section from "./Section/Section.jsx";
 
 export const App = () => {
+
+
   return (
     <div>
-      <h2>Please leave feedback</h2>
-      <button>Good</button>
-      <button>Neutral</button>
-      <button>Bad</button>
-      <br />
-
-      <Statistics />
+      <Section title="Please leave feedback" />
+      <Notifications message="There is no feedback" />
     </div>
   );
 };
