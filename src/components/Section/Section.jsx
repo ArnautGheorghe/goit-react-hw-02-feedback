@@ -4,7 +4,7 @@ import Statistics from "components/Statistics/Statistics";
 
 const Section = ({title}) => {
     const state = {
-      good: 5,
+      good: 3,
       neutral: 2,
       bad: 2,
     };
