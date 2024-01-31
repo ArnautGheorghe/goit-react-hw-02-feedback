@@ -1,6 +1,6 @@
-import styles from "./FeedbackOptions.modules.css";
-import { React, useState, setState } from 'react';
-import PropTypes from 'prop-types';
+
+import { React, useState } from 'react';
+
 import Statistics from "components/Statistics/Statistics";
 import Notifications from "components/Notifications/Notifications";
 
